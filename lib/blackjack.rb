@@ -30,7 +30,7 @@ def initial_round
   first = deal_card 
   second = deal_card
   first_total = first + second
-  display_card_total(totalcount)
+  display_card_total(first_total)
 end
 
 def hit?(totalcount)
@@ -40,12 +40,10 @@ def hit?(totalcount)
   if input == "h"
     totalcount += deal_card
   elsif input == "s"
-  
-  elsif input != "s" || input != "h"
+    totalcount
+  else
     invalid_command
-    prompt_user
   end
-  return totalcount
 
 end
 
