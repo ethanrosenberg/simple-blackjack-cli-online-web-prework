@@ -12,7 +12,6 @@ end
 
 def display_card_total(totalcount)
   puts "Your cards add up to #{totalcount}"
-  return totalcount
 end
 
 def prompt_user
