@@ -6,7 +6,7 @@ end
 
 def deal_card
 
-  rand(1..11)
+  random = rand(1..11)
 
 end
 
